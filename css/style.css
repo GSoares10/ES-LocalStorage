@@ -4,13 +4,13 @@
     background-position: center;
     min-height: 835px;
 }
-
 .list, lista-fichas {
     margin-bottom: 15px;
 }
-
 .button-ul {
     position: relative; 
     top: 250px;
-
+}
+.btn-large {
+    margin: 15px 15px 15px 15px;
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Free Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--Import my Styles.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Manifest JSON-->
+    <link rel="manifest" href="manifest.json">
+    <title>Cadastro de Fichas</title>
+</head>
+
+<body>
+    <div class="header-2">
+        <nav class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="https://github.com/GSoares10" class="brand-logo center tooltipped "
+                    data-tooltip="Github - Perfil">
+                    <i class="fab fa-github medium"></i>
+                </a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="tooltipped btn-floating btn grey darken-4" data-tooltip="Github - Código">
+                            <i class="material-icons">code</i>
+                        </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#github">Github - Perfil <i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="add-fichas section scrollspy center">
+        <div class="container">
+            <div class="card grey lighten-5 z-depth-1">
+                <div class="card-content">
+                    <h1 class="indigo-text text-darken4">Cadastro</h1>
+                </div>
+                <div class="row">
+                    <div class="card-action">
+                        <div class="col s12 l4">
+                            <form class="cadastro col s12">
+                                <h2 class="indigo-text text-darken4">Preencha os dados abaixo:</h2>
+                                <div class="input-field">
+                                    <label for="nome">Nome: </label>
+                                    <input type="text" id="nome" name="nome">
+                                </div>
+                                <div class="input-field">
+                                    <label for="cpf">CPF: </label>
+                                    <input type="text" id="cpf" name="cpf">
+                                </div>
+                                <div class="input-field">
+                                    <label for="cidade">Cidade: </label>
+                                    <input type="text" id="cidade" name="cidade">
+                                </div>
+                                <div class="input-field">
+                                    <label for="curriculo-txt"> Curriculo: </label>
+                                    <textarea name="curriculo-txt" id="curriculo-txt"
+                                        class="materialize-textarea"></textarea>
+                                </div>
+                                <div class="input-field">
+                                    <input class="btn" type="submit" value="Adicionar">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="list col s12 l6 offset-l2">
+                            <table class="tabela striped highlight centered responsive-table">
+                                <h2 class="indigo-text text-darken4 center">
+                                    Fichas
+                                    <a href="#modal1" class="tooltipped modal-trigger" data-tooltip="Informações">
+                                        <i class="fas fa-info-circle small"></i>
+                                    </a>
+                                </h2>
+                                <tbody id="fichas">
+                                    <th class="indigo-text text-darken2 center">Nome</th>
+                                    <th class="indigo-text text-darken2 center">CPF</th>
+                                    <th class="indigo-text text-darken2 center">Cidade</th>
+                                    <th class="indigo-text text-darken2 center">Curriculo</th>
+                                    <th class="indigo-text text-darken2 center">Opções</th>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 class="indigo-text text-darken2">Deseja remover uma ficha?</h4>
+            <p>
+                Uma breve explicação... Caso você deseje remover uma ficha da lista, esteja ciente de que irá remove-la
+                de seu
+                armazenamento interno, ou seja, de seu localStorage. Sendo assim, você não terá acesso a esta ficha caso
+                feche a
+                página e volte.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">Fechar</a>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-4">
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 G.S</div>
+        </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <!-- My Scripts-->
+    <script type="text/javascript" src="js/mainFichas.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- serviceWorker script-->
+    <script src="pwabuilder-sw-register.js"></script>
+    <script src="pwabuilder-sw.js"></script>
+</body>
+
+</html>

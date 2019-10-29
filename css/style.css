@@ -1,0 +1,10 @@
+.add-produtos, .add-fichas, .header-2 {
+    background: url(https://gsoares10.github.io/ES-LocalStorage/icons-imgs/background.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 835px;
+}
+
+.list, lista-fichas {
+    margin-bottom: 15px;
+}

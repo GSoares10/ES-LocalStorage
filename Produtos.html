@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import Free Font Awesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!--Import my Styles.css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Manifest JSON-->
+  <link rel="manifest" href="manifest.json">
+  <title>Compras - G.S</title>
+</head>
+
+<body>
+  <div class="header-2">
+    <nav class="nav-wrapper grey darken-4">
+      <div class="container">
+        <a href="https://github.com/GSoares10" class="brand-logo center tooltipped " data-tooltip="Github - Perfil">
+          <i class="fab fa-github medium"></i>
+        </a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#" class="tooltipped btn-floating btn grey darken-4" data-tooltip="Github - Código">
+              <i class="material-icons">code</i>
+            </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#github">Github - Perfil <i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="add-produtos section scrollspy center">
+    <div class="container">
+      <div class="card grey lighten-5 z-depth-1">
+        <div class="card-content">
+          <h1 class="indigo-text text-darken4"> Lista de Compras </h1>
+        </div>
+        <div class="row">
+          <div class="card-action">
+            <div class="col s12 l4">
+              <form class="cadastro col s12">
+                <h2 class="indigo-text text-darken4">Faça sua lista:</h2>
+                <div class="input-field">
+                  <label for="produto">Produto: </label>
+                  <input type="text" id="produto" name="produto">
+                </div>
+                <div class="input-field">
+                  <input class="btn" type="submit" value="Adicionar">
+                  <input class="btn" type="reset" value="Limpar">
+                </div>
+              </form>
+            </div>
+            <div class="list col s12 l6 offset-l2">
+              <table class="tabela striped highlight centered">
+                <h2 class="indigo-text text-darken4">
+                  Lista
+                  <a class="tooltipped modal-trigger" data-tooltip="Informações" href="#modal1">
+                    <i class="fas fa-info-circle small"></i>
+                  </a>
+                </h2>
+                <tbody id="lista">
+                  <th class="indigo-text text-darken2 center">Produtos</th>
+                  <th class="indigo-text text-darken2 center">Opções</th>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="indigo-text text-darken2">Deseja remover um item?</h4>
+      <p>
+        Uma breve explicação... Caso você deseje remover um item da lista, esteja ciente de que irá remove-lo de seu
+        armazenamento interno, ou seja, de seu localStorage. Sendo assim, você não terá acesso a este item caso feche a
+        página e volte.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-red btn-flat">Fechar</a>
+    </div>
+  </div>
+  <footer class="page-footer grey darken-4">
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2019 G.S</div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- My Scripts-->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/mainProdutos.js"></script>
+  <!-- serviceWorker script-->
+  <script src="pwabuilder-sw-register.js"></script>
+  <script src="pwabuilder-sw.js"></script>
+</body>
+
+</html>

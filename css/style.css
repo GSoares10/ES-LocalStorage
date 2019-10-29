@@ -8,3 +8,9 @@
 .list, lista-fichas {
     margin-bottom: 15px;
 }
+
+.button-ul {
+    position: relative; 
+    top: 400px;
+
+}
